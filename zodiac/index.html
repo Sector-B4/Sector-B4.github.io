@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="vidCT">
+        <video autoplay loop muted plays-inline class="vidBG">
+            <source src="assets/skyBG.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="header-content" class="headerCT">
+        <center>
+            <div class="inputCT">
+                <h1 class="header">Check your Zodiac Sign</h1>
+                <div class="dateCT">
+                    <h3 class="header2">Enter your Birthday:</h3>
+                    <input id="dateInput" type="date"></span>
+                </div>
+                <button id="findBtn" class="find-btn" onclick="findSign()">Find Sign<span>&#10097;</span></button>
+            </div>
+        </center>
+    </div>
+    <div id="resultCT">
+        <center>
+            <img id="imgCT" src="">
+        </center>
+        <div id="info" class="infoBox">
+            <h3 id="h3-zodiac" class="zodiacSign">Zodiac Sign&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<span id="zodiac">NaN</span></h3>
+            <h3 id="h3-planet" class="planetCT">Ruling Planet&nbsp;&nbsp;:<span id="planet">NaN</span></h3>
+            <h3 id="h3-ce" class="elementColor">Color & Element:<span id="element-color">NaN</span></h3>
+            <h3 id="h3-sd" class="shortDes">Short Description: <span id="description">NaN</span></h3>
+        </div>
+    </div>
+    <center>
+        <button id="resetBtn" class="rButton" onclick="reset()">Reset</button>
+    </center>
+</body>
+</html>

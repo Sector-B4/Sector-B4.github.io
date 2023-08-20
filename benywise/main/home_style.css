@@ -1,0 +1,1094 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital@1&family=Spectral:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:wght@300&family=Spectral:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@600&display=swap');
+
+/* Fonts used
+-Lobster
+-Spectral SC
+*/
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.homeSec{
+    background-color: #121211;
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+    height: 100%;
+}
+.serviceSec{
+    background-color: #1d1d1c;
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+    height: 100%;
+}
+.skillSec{
+    background-color: #121211;
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+    height: 100%;
+}
+/* Navigation Bar Style #121211 */
+.navBox{
+    z-index: 100;
+    position: fixed;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    background-color: #161616;
+    width: 100%;
+    height: 7.5%;
+}
+.navBox > .topredBar{
+    position: fixed;
+    padding-bottom: 0;
+    margin-bottom: 20%;
+    height: 1.5%;
+    width: 100%;
+    background-color: #c40404;
+    z-index: 100;
+}
+.navBox > .navBar > ul{
+    padding: 0;
+    list-style: none;
+}
+.navBar > ul > li{
+    display: inline-block;
+    margin-right: 3%;
+    margin-top: 0.2%;
+    padding: 0;
+    height: 30%;
+    width: auto;
+}
+.navBar > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Spectral', serif;
+    font-family: 'Spectral SC', serif;
+    position: relative;
+    /* border: #c40404 solid 1px; */  
+}
+/* .navBar > ul > .psp{
+    margin-right: 50px;
+} */
+.navBar > ul > p{
+    position: relative;
+    color: #c40404;
+    font-size: 40px;
+    font-family: 'Golos Text', sans-serif;
+}
+.navBar > ul > p::after{
+    content: '';
+    position: absolute;
+    opacity: 0%;
+}
+.navBar > ul > li > a:hover .navBar > ul > p{
+    color: #c40404;
+}
+
+
+/* Introduction style */
+.introBox{
+    margin-bottom: 0;
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    /* border: #c40404 solid 1px; */
+}
+.introBox > .greetingTxt{
+    font-size: 62px;
+    font-family: 'Spectral', serif;
+    font-family: 'Spectral SC', serif;
+    color: white;
+    margin-bottom: 0;
+}
+.introBox > .nameTxt{
+    font-size: 95px;
+    font-family: 'Lobster', cursive;
+    color: #c40404;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.introBox > .titleTxt{
+    font-size: 50px;
+    font-family: 'Spectral', serif;
+    font-family: 'Spectral SC', serif;
+    color: white;
+    margin-top: 0;
+} 
+.introBox > .shortDis{
+    font-size: 20;
+    font-family: 'Spectral', serif;
+    font-family: 'Spectral SC', serif;
+    color: white;
+    margin-bottom: 50px;
+}
+/* Intro Line Style */
+.introBox hr{
+    border: 3px solid#c40404;
+}
+.introBox .top_l1{
+    text-align: left;
+    margin-left: 0;
+    width: 30%;
+}
+.introBox .top_l2{
+    text-align: left;
+    margin-left: 0;
+    width: 20%;
+}
+.introBox .bottom_l1{
+    text-align: right;
+    margin-right: 0;
+    margin-top: 10%;
+    width: 20%;
+}
+.introBox .bottom_l2{
+    text-align: right;
+    margin-right: 0;
+    width: 30%;
+}
+.imgBox{
+    margin: 0;
+    padding: 0;
+    width: 47%;
+    height: 67%;
+    position: relative;
+    top: 18%;
+    left: 52%;
+}
+.mypic{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+/* contact links */
+.contactBox{
+    position: absolute;
+    top: 87%;
+    left: -15px;
+    display: flex;
+    
+}
+.contactBox > a{
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #c40404;
+    box-shadow: 0 0 8px 5px rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 15px;
+    overflow: hidden;
+    transition: transform 0.5s;
+    
+}
+.contactBox > a > .bx{
+    font-size: 35px;
+    line-height: 50px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.contactBox > a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -60px;
+    left: 0;
+    /* background: linear-gradient(-45deg, #c40404, #161616); */
+    background-color: #c40404;
+    position: absolute;
+    transition: 0.5s;
+}
+.contactBox > a:hover::after{
+    top: 0;
+}
+.contactBox > a:hover .bx{
+    color: white;
+}
+.contactBox > a:hover{
+    transform: translateY(10px);
+}
+/* My Service Section */
+.serviceBox{
+    position: absolute;
+    left: 10%;
+    top: 120%;
+}
+.serviceTxt{
+    margin-top: 0;
+    padding: 0;
+    font-size: 35px;
+    font-family: 'Lobster', cursive;
+    color: #c40404;
+}
+
+/* SCREEN RESOLUTION */
+
+/* 1980x1080 up to 1768x992 */
+@media only screen and (max-width: 1768px) and (max-height: 992px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 0.4%;
+    }
+    .navBar > ul > li > a{
+        font-size: 28px;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 43%;
+        height: 60%;
+        position: relative;
+        top: 20%;
+        left: 55%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 62;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 86px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 46px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 19;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+/* 1680x1050 up to 1600x1024 */
+/* -------- 1680x1050 | 1600x1024 -------- */
+@media only screen and (max-width: 1680px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        height: 55%;
+        position: relative;
+        top: 25%;
+        left: 57%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 23%;
+        left: 10%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 55px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 85px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 45px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 18;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+/* -------------------------- 1600x900 -------------------------- */
+@media only screen and (max-width: 1600px) and (max-height: 900px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 0.25%;
+    }
+    .navBar > ul > li > a{
+        font-size: 25px;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 43%;
+        height: 58%;
+        position: relative;
+        top: 22%;
+        left: 55%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 20%;
+        left: 10%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 48px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 80px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 40px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 16;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+/* -------------------------- 1440x900 -------------------------- */
+@media only screen and (max-width: 1440px) and (max-height: 900px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    /* HOME SECTION */
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 0.5%;
+    }
+    .navBar > ul > li > a{
+        font-size: 20px;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 41%;
+        height: 56%;
+        position: relative;
+        top: 20%;
+        left: 55%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 20%;
+        left: 10%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 46px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 63px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 33px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 15;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+    /* SERVICE SECTION */
+}
+/* -------------------------- 1366x768 -------------------------- */
+@media only screen and (max-width: 1366px) and (max-height: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 0.2%;
+    }
+    .navBar > ul > li > a{
+        font-size: 20px;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        height: 56%;
+        position: relative;
+        top: 21%;
+        left: 56%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 20%;
+        left: 10%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 40px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 60px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 20px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 15;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+/* -------------------------- 1280x1024 -------------------------- */
+@media only screen and (max-width: 1280px) and (max-height: 1024px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 0.75%;
+    }
+    .navBar > ul > li > a{
+        font-size: 24px;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        height: 42%;
+        position: relative;
+        top: 30%;
+        left: 58%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 30%;
+        left: 7%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 40px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 60px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 20px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 15;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+/* -------------------------- 1280x960 -------------------------- */
+@media only screen and (max-width: 1280px) and (max-height: 960px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 0.75%;
+    }
+    .navBar > ul > li > a{
+        font-size: 24px;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 42%;
+        height: 45%;
+        position: relative;
+        top: 30%;
+        left: 55%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 30%;
+        left: 7%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 40px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 60px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 20px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 15;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+/* -------------------------- 1280x800 -------------------------- */
+@media only screen and (max-width: 1280px) and (max-height: 800px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 0.3%;
+    }
+    .navBar > ul > li > a{
+        font-size: 20px;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        height: 51%;
+        position: relative;
+        top: 27%;
+        left: 54%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 27%;
+        left: 7%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 37px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 57px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 17px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 14;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+/* -------------------------- 1280x768 -------------------------- */
+@media only screen and (max-width: 1280px) and (max-height: 768px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 0.3%;
+    }
+    .navBar > ul > li > a{
+        font-size: 20px;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        height: 53%;
+        position: relative;
+        top: 27%;
+        left: 54%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 27%;
+        left: 7%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 37px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 57px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 17px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 14;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+/* -------------------------- 1280x720 -------------------------- */
+@media only screen and (max-width: 1280px) and (max-height: 720px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 0.2%;
+    }
+    .navBar > ul > li > a{
+        font-size: 20px;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        height: 57%;
+        position: relative;
+        top: 22%;
+        left: 54%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 22%;
+        left: 7%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 37px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 57px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 17px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 14;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+/* -------------------------- 1176x664 -------------------------- */
+@media only screen and (max-width: 1176px) and (max-height: 664px){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 0.1%;
+    }
+    .navBar > ul > li > a{
+        font-size: 18px;
+    }
+    .imgBox{
+        margin: 0;
+        padding: 0;
+        width: 42%;
+        height: 59%;
+        position: relative;
+        top: 23%;
+        left: 55%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 22%;
+        left: 7%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 37px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 57px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 17px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 14;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+}
+/* MOBILE RES */
+@media only screen and (max-aspect-ratio: 9/16){
+    body{
+        margin: 0;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+    .homeSec{
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > ul > li{
+        margin-right: 3%;
+        margin-top: 3.5%;
+    }
+    .navBar > ul > li > a{
+        font-size: 45px;
+    }
+    .imgBox{
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+        width: 42%;
+        height: 59%;
+        position: relative;
+        top: 23%;
+        left: 55%;
+    }
+    .mypic{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 22%;
+        left: 7%;
+        width: 85%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 80px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 0;
+    }
+    .introBox > .nameTxt{
+        font-size: 115px;
+        font-family: 'Lobster', cursive;
+        color: #c40404;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .introBox > .titleTxt{
+        font-size: 90x;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-top: 0;
+    } 
+    .introBox > .shortDis{
+        font-size: 35px;
+        font-family: 'Spectral', serif;
+        font-family: 'Spectral SC', serif;
+        color: white;
+        margin-bottom: 50px;
+    }
+    .contactBox{
+        position: absolute;
+        top: 92%;
+    }
+    .contactBox > a{
+        height: 75px;
+        width: 75px;
+        text-align: center;
+        text-decoration: none;
+        color: #c40404;
+        box-shadow: 0 0 8px 5px rgba(255, 0, 0, 0.5);
+        border-radius: 50%;
+        position: relative;
+        margin: 0 15px;
+        overflow: hidden;
+        transition: transform 0.5s;
+    }
+    .contactBox > a > .bx{
+        font-size: 50px;
+        line-height: 60px;
+        position: relative;
+        z-index: 10;
+        transition: color 0.5s;
+    }
+    .contactBox > a::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: -80px;
+        left: 0;
+        position: absolute;
+        transition: 0.5s;
+    }
+}

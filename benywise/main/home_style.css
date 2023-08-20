@@ -8,41 +8,6 @@
 -Spectral SC
 */
 
-/* SCREEN RESOLUTION */
-@media screen and (max-width: 600px) and (orientation: portrait){
-    body{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-    }
-    .homeSec{
-        width: 100%;
-        height: 100%;
-    }
-    .introBox{
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        margin-right: 10%;
-    }
-    .introBox > .greetingTxt{
-        font-size: 72px;
-    }
-    .introBox > .nameTxt{
-        font-size: 95px;
-    }
-    .introBox > .titleTxt{
-        font-size: 50px;
-    } 
-    .introBox > .shortDis{
-        font-size: 20;
-    }
-    .contactBox{
-        top: 90%;
-    }
-}
-
 body{
     margin: 0;
     padding: 0;
@@ -54,7 +19,7 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 51.2vw;
     display: flex;
     /* border: #c40404 solid 1px; */
 }
@@ -126,13 +91,13 @@ body{
     width: 50vw;
     height: 38.5vw;
     margin-right: 10%;
-    z-index: 10;
 }
 .introBox > .greetingTxt{
     font-size: 3.5vw;
     font-family: 'Spectral', serif;
     font-family: 'Spectral SC', serif;
     color: white;
+    margin-top: 0;
     margin-bottom: 0;
 }
 .introBox > .nameTxt{
@@ -154,7 +119,7 @@ body{
     font-family: 'Spectral', serif;
     font-family: 'Spectral SC', serif;
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 0;
 }
 /* Intro Line Style */
 .introBox hr{
@@ -173,7 +138,7 @@ body{
 .introBox .bottom_l1{
     text-align: right;
     margin-right: 0;
-    margin-top: 10%;
+    margin-top: 5%;
     width: 20%;
 }
 .introBox .bottom_l2{
@@ -185,23 +150,24 @@ body{
     margin: 0;
     padding: 0;
     width: 35%;
-    height: 85%;
     position: relative;
-    top: 15%;
+    top: 12.2%;
     z-index: 0;
 }
 .avatar{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 45vw;
 }
 /* contact links */
 .contactBox{
     position: relative;
     width: fit-content;
+    height: 2.5vw;
     left: -15px;
     display: flex;
+    /* border: 1px solid#c40404; */
 }
 .contactBox > a{
     height: 2.5vw;
@@ -228,7 +194,7 @@ body{
     content: '';
     width: 100%;
     height: 100%;
-    top: -60px;
+    top: -80px;
     left: 0;
     /* background: linear-gradient(-45deg, #c40404, #161616); */
     background-color: #c40404;
@@ -257,4 +223,66 @@ body{
     font-family: 'Lobster', cursive;
     color: #c40404;
 }
-
+/* SCREEN RESOLUTION */
+@media screen and (min-width: 40em) and (orientation: portrait){
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .imgBox{
+        visibility: collapse;
+        height: 0;
+        width: 0;
+        
+    }
+    .homeSec{
+        /* background-color: #121211; */
+        background-image: url(assets/home_background/homeBG_phone.png);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .introBox{
+        top: 10%;
+        position: relative;
+        width: 80%;
+        height:80%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 8vw;
+    }
+    .introBox > .nameTxt{
+        font-size: 11vw;
+    }
+    .introBox > .titleTxt{
+        font-size: 6vw;
+    } 
+    .introBox > .shortDis{
+        font-size: 3vw;
+    }
+    .contactBox > a{
+        height: 7.5vw;
+        width: 7.5vw;
+    }
+    .contactBox > a > .bx{
+        font-size: 5.5vw;
+        line-height: 7.5vw;
+    }
+    .introBox hr{
+        border: .7vw solid #c40404;
+    }
+    .introBox .top_l1{
+        width: 40%;
+    }
+    .introBox .top_l2{
+        width: 30%;
+    }
+    .introBox .bottom_l1{
+        width: 30%;
+    }
+    .introBox .bottom_l2{
+        width: 40%;
+    }
+}

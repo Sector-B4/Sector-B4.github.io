@@ -7,6 +7,42 @@
 -Lobster
 -Spectral SC
 */
+
+/* SCREEN RESOLUTION */
+@media screen and (max-width: 30em) {
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .homeSec{
+        background-image: url("assets/home_background/homeBG_mid.png");
+        background-size: cover;
+    }
+    .introBox{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        margin-right: 10%;
+    }
+    .introBox > .greetingTxt{
+        font-size: 72px;
+    }
+    .introBox > .nameTxt{
+        font-size: 95px;
+    }
+    .introBox > .titleTxt{
+        font-size: 50px;
+    } 
+    .introBox > .shortDis{
+        font-size: 20;
+    }
+    .contactBox{
+        top: 90%;
+    }
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -15,7 +51,7 @@ body{
 }
 .homeSec{
     /* background-color: #121211; */
-    background-image: url("/assets/home_background/homeBG.png");
+    background-image: url("assets/home_background/homeBG.png");
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -56,7 +92,7 @@ body{
     width: 100%;
     background-color: #c40404;
     z-index: 100;
-    visibility: hidden;
+    visibility: collapse;
 }
 .navBox > .navBar > ul{
     padding: 0;
@@ -71,7 +107,7 @@ body{
     width: auto;
 }
 .navBar > ul > li > a{
-    visibility: hidden;
+    visibility: collapse;
     text-decoration: none;
     color: white;
     font-size: 30px;
@@ -82,32 +118,13 @@ body{
     position: relative;
     /* border: #c40404 solid 1px; */  
 }
-/* .navBar > ul > .psp{
-    margin-right: 50px;
-} */
-.navBar > ul > p{
-    position: relative;
-    color: #c40404;
-    font-size: 40px;
-    font-family: 'Golos Text', sans-serif;
-}
-.navBar > ul > p::after{
-    content: '';
-    position: absolute;
-    opacity: 0%;
-}
-.navBar > ul > li > a:hover .navBar > ul > p{
-    color: #c40404;
-}
-
-
 /* Introduction style */
 .introBox{
     margin-bottom: 0;
     position: absolute;
     top: 17%;
     left: 10%;
-    /* border: #c40404 solid 1px; */
+    margin-right: 10%;
 }
 .introBox > .greetingTxt{
     font-size: 62px;
@@ -240,39 +257,3 @@ body{
     color: #c40404;
 }
 
-/* SCREEN RESOLUTION */
-
-@media only screen and (max-width: 600px) {
-    body{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-    }
-    .homeSec{
-        background-image: url("/assets/home_background/homeBG_flipped.png");
-    }
-    .introBox{
-        margin-bottom: 0;
-        position: absolute;
-        top: 10%;
-        left: 10%;
-        width: 85%;
-        /* border: #c40404 solid 1px; */
-    }
-    .introBox > .greetingTxt{
-        font-size: 72px;
-    }
-    .introBox > .nameTxt{
-        font-size: 95px;
-    }
-    .introBox > .titleTxt{
-        font-size: 50px;
-    } 
-    .introBox > .shortDis{
-        font-size: 20;
-    }
-    .contactBox{
-        top: 90%;
-    }
-}

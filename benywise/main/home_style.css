@@ -989,7 +989,7 @@ body{
     }
 }
 /* MOBILE RES */
-@media only screen and (min-width: 500px) and (min-height: 900px){
+@media (max-aspect-ratio: 9/16){
     body{
         margin: 0;
         padding: 0;

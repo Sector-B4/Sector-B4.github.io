@@ -7,8 +7,12 @@
 -Lobster
 -Spectral SC
 */
-
+html{
+    scroll-behavior:smooth;
+}
 body{
+    scroll-behavior:smooth;
+
     margin: 0;
     padding: 0;
     width: 100%;
@@ -26,38 +30,49 @@ body{
 .serviceSec{
     background-color: #1d1d1c;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     width: 100%;
-    height: 100%;
+    height: 51.2vw;
 }
 .skillSec{
     background-color: #121211;
     margin: 0;
-    padding: 0; 
+    padding: 0;
     width: 100%;
-    height: 100%;
+    height: 51.2vw;
+}
+.projectSec{
+    background-color: #1d1d1c;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 51.2vw;
 }
 /* Navigation Bar Style #121211 */
 .navBox{
-    z-index: 100;
     position: fixed;
     margin-right: 0;
     margin-left: 0;
     padding: 0;
+    text-align: center;
     background-color: #161616;
-    width: 100%;
-    height: 7.5%;
-    visibility: hidden;
+    width: 50%;
+    height: 5vw;
+    left:25vw;
+    border-radius: 0 0 50% 50%;
+    box-shadow: 0 0 8px 5px rgba(255, 0, 0, 0.5);
+    z-index: 5;
+    /* visibility: hidden; */
 }
-.navBox > .topredBar{
+.topredBar{
     position: fixed;
     padding-bottom: 0;
-    margin-bottom: 20%;
-    height: 1.5%;
+    margin: 0;
+    height: 1vh;
     width: 100%;
     background-color: #c40404;
     z-index: 100;
-    visibility: collapse;
+    /* visibility: collapse; */
 }
 .navBox > .navBar > ul{
     padding: 0;
@@ -65,23 +80,24 @@ body{
 }
 .navBar > ul > li{
     display: inline-block;
+    margin-top: 0;
     margin-right: 3%;
-    margin-top: 0.2%;
     padding: 0;
     height: 30%;
-    width: auto;
+    width: fit-content;
 }
 .navBar > ul > li > a{
-    visibility: collapse;
+    /* visibility: collapse; */
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 1.5vw;
+    margin: 0;
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'Spectral', serif;
     font-family: 'Spectral SC', serif;
     position: relative;
-    /* border: #c40404 solid 1px; */  
+    /* border: #c40404 solid 1px; */
 }
 /* Introduction style */
 .introBox{
@@ -190,6 +206,7 @@ body{
     z-index: 10;
     transition: color 0.5s;
 }
+/* CONTACT BOX HOVER ANIMATION */
 .contactBox > a::after{
     content: '';
     width: 100%;
@@ -210,6 +227,8 @@ body{
 .contactBox > a:hover{
     transform: translateY(10px);
 }
+/* NAVBAR HOVER ANIMATION */
+
 /* My Service Section */
 .serviceBox{
     position: absolute;
@@ -284,5 +303,25 @@ body{
     }
     .introBox .bottom_l2{
         width: 40%;
+    }
+
+    .navBox{
+        height: 10vw;
+        left:25vw;
+        text-align: center;
+        /* visibility: hidden; */
+    }
+    .navBar > ul > li{
+        display: inline-block;
+        margin-right: 3%;
+        padding: 0;
+        width: fit-content;
+    }
+    .navBar > ul > li > a{
+        /* visibility: collapse; */
+        top: 1vh;
+        font-size: 2.5vw;
+
+        /* border: #c40404 solid 1px; */  
     }
 }

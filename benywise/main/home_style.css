@@ -8,7 +8,7 @@
 -Spectral SC
 */
 html{
-    scroll-behavior:smooth;
+    scroll-behavior:smooth !important;
 }
 body{
     scroll-behavior:smooth;
@@ -33,6 +33,7 @@ body{
     padding: 0;
     width: 100%;
     height: 51.2vw;
+    display: flex;
 }
 .skillSec{
     background-color: #121211;
@@ -97,6 +98,8 @@ body{
     font-family: 'Spectral', serif;
     font-family: 'Spectral SC', serif;
     position: relative;
+    transition: color 0.5s;
+    transition: transform 0.5s;
     /* border: #c40404 solid 1px; */
 }
 /* Introduction style */
@@ -137,7 +140,7 @@ body{
     color: white;
     margin-bottom: 0;
 }
-/* Intro Line Style */
+/* Home Line Style */
 .introBox hr{
     border: 3px solid#c40404;
 }
@@ -228,20 +231,82 @@ body{
     transform: translateY(10px);
 }
 /* NAVBAR HOVER ANIMATION */
+.navBox > .navBar > ul > li{
+    transition: transform 0.5s;
+}
+
+.navBox > .navBar > ul > li:hover{
+    transform: translateY(10px);
+}
+.navBox > .navBar > ul > li > a:hover{
+    color: #c40404;
+}
+
 
 /* My Service Section */
 .serviceBox{
-    position: absolute;
+    position: relative;
+    top: 15%;
     left: 10%;
-    top: 120%;
+    width: 80vw;
+    height: 20.5vw;
+    margin-top: 0;
+    margin-right: 10%;
 }
-.serviceTxt{
+.serviceBox > .service_header{
     margin-top: 0;
     padding: 0;
-    font-size: 35px;
+    font-size: 3.5vw;
     font-family: 'Lobster', cursive;
-    color: #c40404;
+    color: #ffffff;
 }
+/* Service Line Style */
+.serviceBox hr{
+    border: 3px solid#c40404;
+}
+.serviceBox .top_l1{
+    text-align: left;
+    margin-left: 0;
+    width: 30%;
+}
+.serviceBox .top_l2{
+    text-align: left;
+    margin-left: 0;
+    width: 20%;
+}
+.serviceBox .bottom_l1{
+    text-align: right;
+    margin-right: 0;
+    margin-top: 5%;
+    width: 20%;
+}
+.serviceBox .bottom_l2{
+    text-align: right;
+    margin-right: 0;
+    width: 30%;
+}
+.service_grid_container{
+    display: grid;
+    height: 22vw;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.service_grid_box{
+    width: fit-content;
+    height: 15vw;
+}
+.serviceBox > .service_grid_container .service_grid_box > p > .bx{
+    font-size: 2.3vw;
+    color: #c40404;;
+}
+.serviceBox > .service_grid_container > .service_grid_box > p{
+    /* border: 1px solid#c40404; */
+    width: fit-content;
+    font-size: 2vw;
+    font-family: 'Lobster', cursive;
+    color: #ffffff;
+}
+
 /* SCREEN RESOLUTION */
 @media screen and (min-width: 40em) and (orientation: portrait){
     body{
@@ -263,6 +328,11 @@ body{
         width: 100%;
         height: 100%;
     }
+    .serviceSec{
+        width: 100%;
+        height: 100%;
+    }
+    /* HOME SECTION */
     .introBox{
         top: 10%;
         position: relative;
@@ -323,5 +393,45 @@ body{
         font-size: 2.5vw;
 
         /* border: #c40404 solid 1px; */  
+    }
+    /* SERVICE SECTION */
+
+    .serviceBox{
+        top: 5%;
+        width: 80%;
+        height: 90%;
+    }
+
+    .service_grid_container{
+        height: 80%;
+        grid-gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+    }
+
+    .serviceBox > .service_header{
+        font-size: 8vw;
+    }
+    .serviceBox > .service_grid_container .service_grid_box > p > .bx{
+        font-size: 5.3vw;
+    }
+    .serviceBox > .service_grid_container > .service_grid_box > p{
+        font-size: 5vw;
+    }
+
+    .serviceBox hr{
+        border: .7vw solid #c40404;
+    }
+    .serviceBox .top_l1{
+        width: 40%;
+    }
+    .serviceBox .top_l2{
+        width: 30%;
+    }
+    .serviceBox .bottom_l1{
+
+        width: 30%;
+    }
+    .serviceBox .bottom_l2{
+        width: 40%;
     }
 }

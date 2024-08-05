@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html, body{
+    margin: 0;
+
+}
+
+.sec1{
+    position: relative;
+    width: 100vw;
+    height: 23vh;
+    background-image: url(pageBannerTop.png);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 0;
+}
+.sec2{
+    width: 100vw;
+    height: 65vh;
+    background-image: url(hotel_bg.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: -50%;
+    position: relative;
+    
+    
+}
+.sec3{
+    position: relative;
+    width: 100vw;
+    height: 65vh;
+    background-image: url(sec3bg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.header{
+    /* border: 2px solid red; */
+    position: relative;
+    top: 20%;
+    width: 80%;
+    height: 35%;
+    font-size: 5vw;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.s3Header{
+    position: relative;
+    margin: 0;
+    width: fit-content;
+    top: 7%;
+    left: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+}
+.sec2MainBox{
+    position: relative;
+    /* border: 2px solid red; */
+    width: 40%;
+    height: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    top: 30%;
+}
+.sec2Caption{
+    position: relative;
+    color: rgb(252, 245, 237);
+    font-size: 7vw;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    margin: 0 0 8% 0;
+}
+.bookBtn{
+    position: relative;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5%;
+    font-size: 1.5vw;
+    padding: 1vw;
+    color: white;
+    transition: .5s;
+}
+.bookBtn:hover{
+    background-color: rgb(255, 245, 232);
+    color: rgb(155, 155, 155);
+    transition: .5s;
+}
+
+.s3box{
+    position: relative;
+    top: 12%;
+    left: 10%;
+    /* border: 2px solid red; */
+    width: 80vw;
+    height: 40vh;
+    display: flex;
+}
+.bx-leaf{
+    position: relative;
+    top: 10%;
+    color: white;
+    font-size: 15vw;
+}
+.s3horLine{
+    position: relative;
+    width: 45%;
+    height: .5%;
+    margin: 0;
+    border: none;
+    background-color: white;
+    top: 8%;
+    left: 10%;
+}
+.serv1{
+    border: 2px solid rgb(255, 255, 255);
+    position: relative;
+    top: 8%;
+    width: 30%;
+    height: 70%;
+    text-align: center;
+    margin-left: 5%;
+    border-radius: 7%;
+}
+.serv1 .bx{
+    margin: 0;
+    position: relative;
+    top: 10%;
+    color: white;
+    font-size: 10vw;
+}
+.servCap{
+    margin: 1%;
+    font-size: 3vw;
+    font-family: "Lobster Two", sans-serif;
+    color: white;
+}
+.footer{
+    background-color: wheat;
+    width: 100vw;
+    height: 6vh;
+    padding: 1% 0 1% 0;
+}
+.footer h3{
+    margin: 0;
+    color: white;
+}
+
+.pageCaption{
+    position: relative;
+    color: rgb(252, 245, 237);
+    font-size: 5vw;
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* ======================================================================= */
+
+.bookingpageBody{
+    background-image: url(sec3bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form_CT{
+    position: relative;
+    top: 25vh;
+    /* border: 2px red solid; */
+}
+
+.name_lbl{
+    color: white;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 2vw;
+}
+.contact_lbl{
+    color: white;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 2vw;
+}
+
+.checkin_lbl{
+    color: white;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 2vw;
+}
+
+.checkout_lbl{
+    color: white;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 2vw;
+}
+
+.roomtype_lbl{
+    color: white;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 2vw;
+}
+
+.addReq_lbl{
+    color: white;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 2vw;
+}
+
+.endText_lbl{
+    color: white;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 2vw;
+}
+
+#name{
+    font-size: 2vw;
+    margin: 1%;
+    border: none;
+    opacity: 40%;
+}
+
+.nextBtn{
+    position: relative;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5%;
+    font-size: 1.5vw;
+    padding: 1vw;
+    color: white;
+    transition: .5s;
+}
+.nextBtn:hover{
+    background-color: rgb(255, 245, 232);
+    color: rgb(155, 155, 155);
+    transition: .5s;
+}
+.homeBtn{
+    position: relative;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5%;
+    font-size: 1.5vw;
+    padding: 1vw;
+    color: white;
+    transition: .5s;
+}
+.homeBtn:hover{
+    background-color: rgb(255, 245, 232);
+    color: rgb(155, 155, 155);
+    transition: .5s;
+}
